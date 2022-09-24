@@ -11,6 +11,8 @@
     --shadow-color-one:rgba(0, 0, 0, 0.1);
     --shadow-color-two:rgba(0, 0, 0, 0.08);
     --shadow-color-three:rgba(0, 0, 0, 0.12);
+    --heading-line:#ECECEC;
+    --portfolio-line:#EEEEEE;
 }
 
 h1,
@@ -31,9 +33,10 @@ p{
 .footer-contacts-link:hover,
 .footer-contacts-link:focus,
 .footer-street:hover,
-footer-street:focus,
+.footer-street:focus,
 .street-link:hover,
 .street-link:focus
+
 {
     color: var(--accent-color);
 }
@@ -53,7 +56,7 @@ body{
 }
 
 .container{
-    width: 1170px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -68,7 +71,7 @@ body{
 
 .heading {
     background-color: var(--white-color);
-    
+    border-bottom: 1px solid var(--heading-line);
 }
 
 .heading .container{
@@ -143,13 +146,19 @@ body{
     color: var(--paragraph-gray-color)
 }
 
+
+
 /*-------------------------------HERO-----------------------------*/
 
 .hero-section {
     background:var(--dark-background-color);
     text-align: center;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-text {
+
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -183,7 +192,7 @@ body{
 /*------------------------------DIGNITY---------------------------*/
 
 .dignity-section {  
-    margin-bottom: 94px;
+    margin-bottom: -94px;
 }
 
 .dignity-list {
@@ -273,6 +282,11 @@ body{
     margin-bottom: 30px;
 }
 
+.team-space{
+    text-align: center; 
+    padding-bottom: 30px;
+}
+
 .team-item {
     margin-right: 30px;
 }
@@ -299,13 +313,18 @@ body{
     display: flex;
 }
 
+.footer .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .footer-logo-web{
     display: inline-block;
-    margin-top: 60px;
+
 }
 
 .footer-list {
-    margin-bottom: 60px;
+
 }
 
 .footer-street {
@@ -323,9 +342,6 @@ body{
 
 }
 
-.footer-contacts-item:last-child{
-   
-}
 
 .footer .logo-studio{
     color: var(--white-color);
@@ -402,7 +418,7 @@ body{
     justify-content: space-between;
 
     /* margin-left: 30px; */
-    
+
 }
 
 /* .projects-list:nth-child(3n){
@@ -410,14 +426,22 @@ body{
 } */
 
 .projects-list img {
-    margin-bottom: 20px;
+
 }
 
 .project-item {
     width: 370px; 
     margin-bottom: 30px;
-
+    border: 1px solid var(--portfolio-line);
 }
+/* border: 1px solid var(--portfolio-line); */
+.projects-space{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .project-item:nth-last-child(-n+3){
     margin-bottom: 0;
 }
